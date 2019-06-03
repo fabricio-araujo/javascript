@@ -20,12 +20,24 @@
 
 
     <script>
-        var n1 = Number.parseInt(window.prompt('digite um número:')) // string
-        var n2 = Number.parseInt(window.prompt('digite outro número:')) // string
+        var n1 = Number(window.prompt('digite um número:')) // string. Funciona somente com Number. É possível escrever sem parseInt ou Float.
+        var n2 = Number(window.prompt('digite outro número:')) // string
         var s = n1 + n2
-        window.alert('A soma dos valores é ' + s) // concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // concatenação
         // (number + number) + para adição
         // (string + string)+ para concatenação
+
+        /* Ex: para string, existem duas maneiras:
+           String(n)
+           n.toString()
+        */
+
+        /* formato de strings
+        s.length - quantos caracteres tem a string
+        s.toUpperCase() - tudo maiúsculo
+        s.toLowerCase() - tudo minúsculo
+        */
+
     </script>
 </body>
 </html>
