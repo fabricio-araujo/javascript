@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body onload="carregar()">
+<body class="body" onload="carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1 class="text-light mt-4 mb-4">Hora do Dia</h1>
     </header>
     <section>
-        <div id="msg">
+        <div id="msg" class="d-flex justify-content-center mt-2 mb-4">
             Aqui vai aparecer a imagem
         </div>
-        <div id="imagem">
-            <img src="./fotomanha.jpg" class="img-fluid rounded-circle" alt="foto do dia">
+        <div id="foto" class="d-flex justify-content-center mb-4">
+            <img id="imagem" src="./img/fotomanha.jpg" class="img-fluid rounded-circle" alt="foto do dia">
         </div>
     </section>
-    <footer>
+    <footer class="mt-4">
         <p>&copy; Shablau Inc.</p>
     </footer>
     <script src="./js/script.js"></script>
