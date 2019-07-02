@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analisador Numérico</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="body">
+    <header>
+        <h1 class="text-light mt-4 mb-4">Analisador Numérico</h1>
+    </header>
+    <section>
+        <div>
+            Número (entre 1 e 100)
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br><br><input type="button" value="finalizar" onclick="finalizar()">
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer class="mt-4">
+        <p>&copy; Shablau Inc.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
